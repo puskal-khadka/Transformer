@@ -50,7 +50,7 @@ def train(model:Transformer, datasets:CustomDataset, sourceVocab, targetVocab):
                 optimizer.step()
                 tqm.set_postfix(loss = loss.item())
                 tqm.set_description(f" Epoch {epoch+1}/{epoch_count}")
-                saveModel(transformer, optimizer, False, epoch, sourceVocab, targetVocab,  f"checkpoint_model_state_dict_ep{epoch+1}")  #  checkpoint
+            saveModel(transformer, optimizer, False, epoch, sourceVocab, targetVocab,  f"checkpoint_model_state_dict_ep{epoch+1}")  #  checkpoint
 
     saveModel(transformer, optimizer, True, epoch_count, sourceVocab, targetVocab, f"trained_model_state_dict")  # trained model
     print("Training Completed")
