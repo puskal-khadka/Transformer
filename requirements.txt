@@ -1,0 +1,7 @@
+torch==2.2.0
+torchtext==0.16.2
+spacy==3.7.2
+tqdm==4.66.1
+pandas==2.2.1
+openpyxl==3.1.2
+scikit-learn==1.4.0
